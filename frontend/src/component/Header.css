@@ -1,0 +1,53 @@
+header{
+    background-color: black;
+}
+
+.txt{
+    color: white;
+    font-weight: 600db;
+    text-decoration: none;
+}
+.txt:hoover{
+    text-decoration: none;
+}
+.txt__1:hover{
+    text-decoration: none;
+    color: green;
+    
+}
+.txt__2:hover{
+    text-decoration: none;
+    color: #F3A847;
+}
+.p{
+    color:white;
+    font-weight: 14px;
+    text-decoration: none;
+}
+
+.p1{
+    margin-top: 0px;
+}
+.retuns{
+    margin: 0px;
+    color:white;
+    
+}
+
+
+.retuns:hover{
+    color:#17A2B8
+}
+
+.section-header{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.img{
+     width:75%;
+     margin-left: 0%;
+     margin-right: 0%;
+}
+

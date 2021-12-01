@@ -1,0 +1,19 @@
+package ecommerce.api.model;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import lombok.Data;
+@Data
+@Entity(name="Product")
+public class Profile {
+	@Id
+	@GeneratedValue
+	private int id;
+		
+	String name;
+	String email;
+	String passsword;
+	}
+
+

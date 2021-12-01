@@ -1,0 +1,42 @@
+package ecommerce.api.service;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import ecommerce.api.model.Order;
+import ecommerce.api.repository.OrderRepository;
+
+@Service
+
+	public class OrderService {
+	@Autowired
+	OrderRepository orderRepository;
+		
+	public Order submitOrderToDB(Order orders) {
+		return orderRepository.save(orders);
+	}
+	
+	public ArrayList<Order> retriveOrderFromDB(){
+		ArrayList<Order> orederlist = orderRepository.findAll();
+		Collections.sort(orederlist,(a,b)->b.getId()-a.getId());
+		return orederlist;
+		
+	}
+	
+	public Optional<Order> detailsOrderFromDB(int id){
+		Optional<Order> orederlist = orderRepository.findById(id);
+		return orederlist;
+	}
+	
+	public long totalOrder() {
+		return orderRepository.count();
+	}
+	
+	public float totalTaka() {
+		return orderRepository.totalAmount();
+	}
+}
+

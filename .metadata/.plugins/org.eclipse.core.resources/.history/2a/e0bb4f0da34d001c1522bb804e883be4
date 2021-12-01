@@ -1,0 +1,29 @@
+package ecommerce.api.service;
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ecommerce.api.model.Product;
+import ecommerce.api.repository.ProfileRepository;
+@Service
+public class ProfileService {
+	@Autowired
+	ProfileRepository profiileRepository;
+
+	public Product sumitToDB(Product product) {
+	
+		
+		return profiileRepository.save(product);
+	}
+	
+	public ArrayList<Product> retriveProductFromDB(){
+		ArrayList<Product> productlist = profiileRepository.findAll();
+		
+		return productlist;
+		
+	}
+
+	
+
+}

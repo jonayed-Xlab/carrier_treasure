@@ -1,0 +1,5 @@
+package ecommerce.api.model;
+
+public class Profile {
+
+}

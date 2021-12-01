@@ -1,0 +1,22 @@
+package ecommerce.api.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import lombok.Data;
+@Data
+@Entity(name="Product")
+public class Product {
+	@Id
+	@GeneratedValue
+	private int id;
+	
+	String productId;
+	String productName;
+	String productAddress;
+	String expireDate;
+	String unitStoks;
+	String productPrice;
+	String imgURL;
+}

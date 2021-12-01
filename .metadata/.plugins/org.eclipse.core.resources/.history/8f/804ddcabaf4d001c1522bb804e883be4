@@ -1,0 +1,17 @@
+package ecommerce.api.model;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.Data;
+@Data
+@Entity(name="Product")
+public class Profile {
+	@Id
+	private static final int Id = 1;
+		
+	String name;
+	String email;
+	String passsword;
+	}
+
+

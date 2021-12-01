@@ -1,0 +1,16 @@
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+/* 
+input:required {
+    border-color: #CED4DA;
+    border-width: 1px;
+}
+
+input:required:invalid {
+    
+    border-color: #000000;
+    border-width: 1px;
+
+  } */
